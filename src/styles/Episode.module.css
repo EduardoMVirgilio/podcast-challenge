@@ -1,0 +1,61 @@
+.episode {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: var(--transparent);
+  color: var(--light);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  z-index: 9;
+  height: 35dvh;
+  text-align: center;
+  gap: 0.25rem;
+  backdrop-filter: blur(4px);
+  border-radius: 1rem 0 0 1rem;
+}
+.cover {
+  width: 50%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.audio {
+  display: none;
+}
+.close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  color: var(--light);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.action {
+  background-color: var(--primary);
+  color: var(--light);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
